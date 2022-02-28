@@ -1,0 +1,18 @@
+#!/bin/sh
+
+#feh --no-fehbg --bg-scale '/mnt/store/Store.Disk/Documents/Wallpapers/arch.jpg' 
+#feh --no-fehbg --bg-scale '/mnt/store/Store.Disk/Documents/Wallpapers/arch1.jpg' 
+#feh --no-fehbg --bg-scale '/mnt/store/Store.Disk/Documents/Wallpapers/arch2.jpg' 
+#feh --no-fehbg --bg-scale '/mnt/store/Store.Disk/Documents/Wallpapers/arch3.jpg' 
+feh --no-fehbg --bg-scale '/mnt/store/Store.Disk/Documents/Wallpapers/arch4.jpg' 
+
+#feh --no-fehbg --bg-scale '/mnt/store/Store.Disk/Documents/Wallpapers/arch.png' 
+#feh --no-fehbg --bg-scale '/mnt/store/Store.Disk/Documents/Wallpapers/arch2.png' 
+#feh --no-fehbg --bg-scale '/mnt/store/Store.Disk/Documents/Wallpapers/arch3.png' 
+#feh --no-fehbg --bg-scale '/mnt/store/Store.Disk/Documents/Wallpapers/arch4.png' 
+#feh --no-fehbg --bg-scale '/mnt/store/Store.Disk/Documents/Wallpapers/arch5.png' 
+#feh --no-fehbg --bg-scale '/mnt/store/Store.Disk/Documents/Wallpapers/arch6.png' 
+#feh --no-fehbg --bg-scale '/mnt/store/Store.Disk/Documents/Wallpapers/arch7.png' 
+#feh --no-fehbg --bg-scale '/mnt/store/Store.Disk/Documents/Wallpapers/arch8.png' 
+
+#feh --no-fehbg --bg-scale '/mnt/store/Store.Disk/Documents/Wallpapers/arch.jpeg' 

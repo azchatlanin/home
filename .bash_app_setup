@@ -1,0 +1,3 @@
+# ranger
+export VISUAL=nvim;
+export EDITOR=nvim;
