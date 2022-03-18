@@ -48,6 +48,9 @@ return packer.startup(function(use)
   use "kyazdani42/nvim-web-devicons"                             -- tree file icons
   use "kyazdani42/nvim-tree.lua"                                 -- tree file
 
+  -- use "xolox/vim-session"                                        -- session
+  -- use "xolox/vim-misc"
+
   use "nvim-telescope/telescope.nvim"                            -- Telescope
 
   use {                                                          -- Treesitter. This is higjlight
@@ -75,7 +78,7 @@ return packer.startup(function(use)
   use "hrsh7th/cmp-buffer"                                       -- buffer completions
   use "hrsh7th/cmp-path"                                         -- path completions
   use "hrsh7th/cmp-cmdline"                                      -- cmdline completions
-  use "saadparwaiz1/cmp_luasnip"                                 -- snippet completions
+  --use "saadparwaiz1/cmp_luasnip"                                 -- snippet completions
   use "azchatlanin/cmp-nvim-lsp"
 
   -- snippets

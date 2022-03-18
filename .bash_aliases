@@ -39,7 +39,9 @@ alias nv='nvim'
 
 # move to dir
 alias ..='cd ..'
-alias ...='cd ../../'
+alias ....='cd ../../'
+alias ......='cd ../../../'
+alias ........='cd ../../../../'
 alias .2='cd ../../'
 alias .3='cd ../../../'
 alias .4='cd ../../../../'
@@ -64,5 +66,9 @@ alias .gp='previous_path_position'
 # previous command
 alias pr='fc -s'
 
-#play video
+# play video
 alias play='mpv'
+alias rec='screencast -S rec.mp4'
+
+# bpytop
+alias bp='bpytop'

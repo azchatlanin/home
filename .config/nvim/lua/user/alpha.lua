@@ -84,16 +84,10 @@ local header_projects = {
 local projects = {
   type = "group",
   val = {
-    dashboard.button("nc",       "   Nvim config",            ":e /mnt/store/home/.config/nvim/init.lua<CR>:NvimTreeFindFileToggle<CR>"),
+    dashboard.button("nvc",      "   nvim config",            ":e /mnt/store/home/.config/nvim/init.lua<CR>:NvimTreeFindFileToggle<CR>"),
     dashboard.button("dwm",      "冷  dwm",                    ":e /mnt/develop/application/dwm/dwm.6.2/config.h<CR>:NvimTreeFindFileToggle<CR>"),
-    dashboard.button("ft",       "冷  ftxui",                  ":e /mnt/develop/projects/cpp/ftxui/README.md<CR>:NvimTreeFindFileToggle<CR>"),
-    dashboard.button("base",     "冷  base",                   ":e /mnt/develop/projects/cpp/base/meson.build<CR>:NvimTreeFindFileToggle<CR>"),
     dashboard.button("hack",     "冷  hack",                   ":e /mnt/develop/projects/cpp/hack/meson.build<CR>:NvimTreeFindFileToggle<CR>"),
     dashboard.button("rrr",      "冷  rrr",                    ":e /mnt/develop/projects/cpp/rrr/meson.build<CR>:NvimTreeFindFileToggle<CR>"),
-    dashboard.button("ea",       "冷  (dev) emuse.v2/api",     ":e /mnt/develop/projects/cpp/xaoslab/emuse.v2/api/meson.build<CR>:NvimTreeFindFileToggle<CR>"),
-    dashboard.button("er",       "冷  (dev) emuse.v2/result",  ":e /mnt/develop/projects/cpp/xaoslab/emuse.v2/result/meson.build<CR>:NvimTreeFindFileToggle<CR>"),
-    dashboard.button("et",       "冷  (dev) emuse.v2/tests",   ":e /mnt/develop/projects/cpp/xaoslab/emuse.v2/tests/meson.build<CR>:NvimTreeFindFileToggle<CR>"),
-    dashboard.button("alpha",    "冷  nvim-alpha",             ":e /mnt/develop/projects/nvim/alpha-nvim/README.md<CR>:NvimTreeFindFileToggle<CR>"),
   },
   opts = {
     spacing = 1,

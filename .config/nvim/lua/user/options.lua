@@ -5,7 +5,6 @@ vim.opt.regexpengine 	              = 1 			                          -- новы
 vim.opt.pumheight 	                = 10                                -- pop up menu height
 vim.opt.wrap 		                    = false                             -- display lines as one long line
 vim.opt.ruler 		                  = true                              -- показывать курсор все время
-vim.opt.ruler 		                  = true                              -- показывать курсор все время
 vim.opt.cmdheight 	                = 2                                 -- количество экранных строк для использования в командной строке
 vim.opt.mouse 		                  = "a"                               -- allow the mouse to be used in neovim
 vim.opt.splitbelow 	                = true                              -- горизонтальное разделение идет ниже
@@ -29,7 +28,7 @@ vim.opt.clipboard 	                = "unnamedplus"                     -- коп
 vim.opt.autochdir 	                = true         		                  -- рабочий каталог всегда будет таким же, как и ваш рабочий каталог
 vim.opt.termguicolors	              = true                              -- set term gui colors (most terminals support this)
 vim.opt.swapfile 	                  = false                             -- creates a swapfile
-vim.opt.scrolloff 	                = 33                                -- начинать скролить за 33 строк до конца экрана
+vim.opt.scrolloff 	                = 12                                -- начинать скролить за 33 строк до конца экрана
 vim.opt.colorcolumn 	              = "320"                             -- граница кода (черта вертикальная)
 vim.opt.showmode 	                  = false                             -- we don't need to see things like -- INSERT -- anymore
 vim.opt.foldnestmax	                = 10                                -- устанавливает максимальное вложение складок
@@ -50,3 +49,5 @@ vim.opt.whichwrap:append {['<'] = true, ['>'] = true, [','] = true, h = true, l 
 
 vim.cmd [[set iskeyword+=-]]                                            -- рассматривайте слова, разделенные тире, как текстовый объект
 vim.cmd [[set formatoptions-=cro]]                                      -- последовательность букв, описывающая, как автоматически форматирование должно быть выполнено. TODO: this doesn't seem to work
+vim.cmd [[set shada="NONE"]]                                            -- не читает из глобального хранилища переменных. метки не сохраняются между сессиями
+vim.cmd [[set relativenumber]]

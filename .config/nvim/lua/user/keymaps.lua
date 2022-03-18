@@ -82,8 +82,8 @@ keymap("n", "<leader>t", ":ToggleTerm<CR>", opts)
 -- show error and warning diagnostic
 keymap("n", "<leader>e", ":lua vim.diagnostic.goto_prev({ border = \"rounded\" })<CR>", opts)
 
--- show alpch
-keymap("n", "<leader><TAB>", ":NvimTreeClose<CR>:Alpha<CR>", opts)
+-- toggle nvim tree
+keymap("n", "<leader><TAB>", ":NvimTreeToggle<CR>", opts)
 
 -- anyjump for code definition
 keymap("n", "<leader>j", ":AnyJump<CR>", opts)
