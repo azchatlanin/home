@@ -38,15 +38,11 @@ numlockx &
 picom &
 google-chrome-stable &
 telegram-desktop &
-tilix --class=worker --new-process &
-tilix --class=worker --new-process &
-tilix --class=worker --new-process &
-tilix --class=worker --new-process &
-tilix --class=worker --new-process &
-tilix --class=helper --new-process &
-tilix --class=helper --new-process &
-tilix --class=helper --new-process &
-tilix --class=helper --new-process &
-tilix --class=helper --new-process &
 dbeaver &
+tilix --class=worker --new-process &
+tilix --class=worker --new-process &
+tilix --class=worker --new-process &
+tilix --class=helper --new-process &
+tilix --class=helper --new-process &
+tilix --class=helper --new-process &
 postman

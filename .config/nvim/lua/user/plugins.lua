@@ -68,7 +68,6 @@ return packer.startup(function(use)
 
   use "numToStr/Comment.nvim"                                    -- Easily comment stuff
 
-  use "akinsho/bufferline.nvim"                                  -- bufferline
   use "moll/vim-bbye"                                            -- close buffer
 
   use "lukas-reineke/indent-blankline.nvim"                      -- added vertical lines boarder in the code
@@ -109,6 +108,7 @@ return packer.startup(function(use)
   -- }
   use "metakirby5/codi.vim"                                      -- show code result online
   use "akinsho/toggleterm.nvim"                                  -- toggle terminal
+  use "akinsho/bufferline.nvim"                                  -- bufferline
 
   use "pechorin/any-jump.vim"
 
@@ -117,6 +117,9 @@ return packer.startup(function(use)
   use "windwp/windline.nvim"
 
   use "tpope/vim-surround"                                       -- select word in ("[{ 
+
+  use "posva/vim-vue"
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then

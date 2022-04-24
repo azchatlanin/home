@@ -249,6 +249,11 @@ _G.packer_plugins = {
     path = "/home/chatlanin/.local/share/nvim/site/pack/packer/start/vim-surround",
     url = "https://github.com/tpope/vim-surround"
   },
+  ["vim-vue"] = {
+    loaded = true,
+    path = "/home/chatlanin/.local/share/nvim/site/pack/packer/start/vim-vue",
+    url = "https://github.com/posva/vim-vue"
+  },
   vimwiki = {
     loaded = true,
     path = "/home/chatlanin/.local/share/nvim/site/pack/packer/start/vimwiki",
