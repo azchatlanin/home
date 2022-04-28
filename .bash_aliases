@@ -47,22 +47,6 @@ alias .3='cd ../../../'
 alias .4='cd ../../../../'
 alias .5='cd ../../../../../'
 
-# navigation 
-LAST_PATH_POSITION=""
-function previous_path_position()
-{
-  cd $LAST_PATH_POSITION
-}
-
-function next_path_posotion()
-{
-  LAST_PATH_POSITION=$(pwd)
-  cd ..
-}
-
-alias .gn='next_path_posotion'
-alias .gp='previous_path_position'
-
 # previous command
 alias pr='fc -s'
 

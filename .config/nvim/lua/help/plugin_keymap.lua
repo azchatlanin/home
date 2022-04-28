@@ -63,6 +63,9 @@ PluginKeymap.open_pp = function()
     "COMMENT",
     " add comment block                :                 normal <g-c>",
     " add comment line                 :               normal <g-c-c>",
+    "",
+    "UNDOTREE",
+    " toggle history                   :                 normal <F5>",
     ""
   }, {
     padding = { 0, 3, 0, 3 },

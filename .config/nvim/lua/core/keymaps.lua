@@ -87,3 +87,6 @@ keymap("n", "<leader><TAB>", ":NvimTreeToggle<CR>", opts)
 
 -- anyjump for code definition
 keymap("n", "<leader>j", ":AnyJump<CR>", opts)
+
+-- toggle undotree
+keymap("n", "<F5>", ":UndotreeToggle<CR>:UndotreeFocus<CR>", opts)

@@ -1,8 +1,7 @@
 #!/bin/bash
 
 ## https://pastebin.com/Q5EU01x3
-#PS1="\n╔═ [\033[01;32m]\u@\h [\033[01;0m]@ \n╚═══ [\033[01;36m]\w[\033[01;34m]->[\033[00m] "
-PS1="\n\033[01;34m╔═ \u@\h \033[01;00m[\033[01;36m\w\033[01;00m]\n\033[01;34m╚═══:\033[01;00m "
+PS1="\n\033[01;34m╔═ \u@\h \033[01;00m[\033[01;36m\w\033[01;00m]\n\033[01;34m╚═══ :\033[01;00m "
 
 if [ -f ~/.bash_aliases ]; then
   . ~/.bash_aliases
@@ -37,24 +36,3 @@ set -o noclobber
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-
-# lines=$(tput lines)
-# echo "0 lines= " $lines
-# if [[ $lines -gt 100 ]]
-# then
-#   clear && screenfetch && lst
-#   echo "1 lines= " $lines
-# else
-#   clear && lst
-#   echo "2 lines= " $lines
-# fi
-#
-# terminal_count=$(ls /dev/pts/ | wc -l)
-# if [[ $terminal_count -gt 7 ]]
-# then
-#   clear && lst
-# else
-#   clear && screenfetch && lst
-# fi
-
