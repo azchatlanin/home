@@ -89,11 +89,6 @@ _G.packer_plugins = {
     path = "/home/chatlanin/.local/share/nvim/site/pack/packer/start/any-jump.vim",
     url = "https://github.com/pechorin/any-jump.vim"
   },
-  ["better-escape.nvim"] = {
-    loaded = true,
-    path = "/home/chatlanin/.local/share/nvim/site/pack/packer/start/better-escape.nvim",
-    url = "https://github.com/max397574/better-escape.nvim"
-  },
   ["bufferline.nvim"] = {
     loaded = true,
     path = "/home/chatlanin/.local/share/nvim/site/pack/packer/start/bufferline.nvim",

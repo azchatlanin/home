@@ -11,6 +11,9 @@ if [ -f ~/.bash_app_setup ]; then
   . ~/.bash_app_setup
 fi
 
+# set history size in the file
+HISTFILESIZE=12000
+
 # set sorting rule
 export LC_ALL=C
 

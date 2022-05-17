@@ -1,32 +1,13 @@
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
   test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-  #alias lsh='ls -la --color=auto --group-directories-first --file-type'
-  #alias ls='ls -l --color=auto --group-directories-first --file-type'
-  alias dir='dir --color=auto'
-  alias vdir='vdir --color=auto'
-  alias grep='grep --color=auto'
-  alias fgrep='fgrep --color=auto'
-  alias egrep='egrep --color=auto'
 fi
-
-# tree
-alias lst='tree -asv --dirsfirst -L 1 ./'
-alias lst1='tree -asv --dirsfirst -L 2 ./'
-alias lst2='tree -asv --dirsfirst -L 3 ./'
-alias lst3='tree -asv --dirsfirst -L 4 ./'
-alias lst4='tree -asv --dirsfirst -L 5 ./'
-alias lst5='tree -asv --dirsfirst -L 6 ./'
 
 # question before delete
 alias rm='\rm -i'
-alias delete='rm -rf'
-
-# clear
-alias cl='clear'
 
 # cfiles
-alias rrr='ranger'
+alias rrr='/mnt/develop/projects/cpp/rrr/build/bin/rrr'
 
 # goto
 alias goto='. \goto'
@@ -53,6 +34,7 @@ alias pr='fc -s'
 # play video
 alias play='mpv'
 alias rec='screencast -S rec.mp4'
+alias rec_cam='vlc --verbose 3 v4l://:v4l-vdev="/dev/video0" --sout "#transcode{vcodec=mp1v,vb=1024,scale=1,acodec=mpga,ab=192,channels=2}:duplicate{dst=std{access=file,mux=mpeg1,dst=/home/chatlanin/rec_cam.mpg}}"'
 
 # bpytop
 alias bp='bpytop'
