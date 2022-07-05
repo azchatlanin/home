@@ -7,6 +7,7 @@ fi
 alias rm='\rm -i'
 
 # cfiles
+alias ran='ranger'
 alias rrr='/mnt/develop/projects/cpp/rrr/build/bin/rrr'
 
 # goto

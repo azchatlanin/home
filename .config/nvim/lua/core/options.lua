@@ -87,8 +87,8 @@ opt.autoindent = true
 -- исправляет поведение backspace на большинстве терминалов.
 opt.backspace = "indent,eol,start"
 
--- рабочий каталог всегда будет таким же, как и ваш рабочий каталог
-opt.autochdir = true
+-- -- рабочий каталог всегда будет таким же, как и ваш рабочий каталог
+-- opt.autochdir = true
 
 -- начинать скролить за 33 строк до конца экрана
 opt.scrolloff = 12
@@ -156,16 +156,6 @@ cmd [[set iskeyword+=-]]
 
 -- последовательность букв, описывающая, как автоматически форматирование должно быть выполнено. TODO: this doesn't seem to work
 cmd [[set formatoptions-=cro]]
-
-
--- cpp
--- vim.g.cpp_class_scope_highlight = 1
--- vim.g.cpp_function_highlight = 1
--- vim.g.cpp_class_decl_highlight = 1
--- vim.g.cpp_posix_standard = 1
--- vim.g.cpp_attributes_highlight = 1
--- vim.g.cpp_member_highlight = 1
--- vim.g.cpp_simple_highlight = 1
 
 -- session
 -- vim.g.session_directory='/mnt/store/home/.config/nvim/sessions'

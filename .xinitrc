@@ -30,6 +30,9 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
+xrandr --setprovideroutputsource modesetting NVIDIA-0
+xrandr --auto
+
 sh ./.fehbg & 
 dwm &
 sh /mnt/develop/bin/chatlanin &
@@ -39,10 +42,10 @@ picom &
 google-chrome-stable &
 telegram-desktop &
 dbeaver &
-tilix --class=worker --new-process &
-tilix --class=worker --new-process &
-tilix --class=worker --new-process &
-tilix --class=helper --new-process &
-tilix --class=helper --new-process &
-tilix --class=helper --new-process &
+tilix --class=terminal_worker --new-process &
+tilix --class=terminal_worker --new-process &
+tilix --class=terminal_worker --new-process &
+tilix --class=terminal_helper --new-process &
+tilix --class=terminal_helper --new-process &
+tilix --class=terminal_helper --new-process &
 postman

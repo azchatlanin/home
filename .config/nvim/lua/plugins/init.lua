@@ -18,14 +18,14 @@ return packer.startup(function(use)
   -- packer manager
   use "wbthomason/packer.nvim"
 
-  -- tree file icons
-  use "kyazdani42/nvim-web-devicons"
-
   -- popup api
   use "nvim-lua/popup.nvim"
 
   -- show color: Blue, Red, Yellow, Green, Pink
   use "norcalli/nvim-colorizer.lua"
+
+  -- tree file icons
+  use "kyazdani42/nvim-web-devicons"
 
   -- tree files
   use "kyazdani42/nvim-tree.lua"
@@ -41,7 +41,6 @@ return packer.startup(function(use)
 
   -- easily comment stuff
   use "numToStr/Comment.nvim"
-
 
   -- vue sintacsis
   use "posva/vim-vue"

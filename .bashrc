@@ -1,7 +1,15 @@
 #!/bin/bash
 
-## https://pastebin.com/Q5EU01x3
-PS1="\n\033[01;34m╔═ \u@\h \033[01;00m[\033[01;36m\w\033[01;00m]\n\033[01;34m╚═══ :\033[01;00m "
+source /mnt/develop/bin/style
+
+## https://tldp.org/LDP/abs/html/sample-bashrc.html
+
+#PS1="\n$BOLD$BLUE\u@\h$RESET $ITALIC$COLOR_BUILD_0<\w>$RESET\n$ITALIC$COLOR_BUILD_1\$(date +\"%H:%M\")$RESET $BOLD$GREEN$COLOR_BUILD_2[]$RESET : "
+#PS1="\n$ITALIC$COLOR_BUILD_1\$(date +\"%H:%M\")$RESET $BOLD$GREEN$COLOR_BUILD_2[]$RESET : "
+#PS1="[$ITALIC$COLOR_BUILD_0\w$RESET]\n$BOLD$GREEN$COLOR_BUILD_2[]$YELLOW ->$RESET "
+#PS1="$BOLD$GREEN$COLOR_BUILD_2[]$YELLOW ->$RESET "
+
+PS1="\n[$ITALIC$COLOR_BUILD_0\w$RESET]\n$BOLD$COLOR_BUILD_2[]$RESET$YELLOW ->$RESET "
 
 if [ -f ~/.bash_aliases ]; then
   . ~/.bash_aliases
@@ -13,9 +21,6 @@ fi
 
 # set history size in the file
 HISTFILESIZE=12000
-
-# set sorting rule
-export LC_ALL=C
 
 # chatlanin
 export CHATLANIN_PATH=/mnt/develop/bin
@@ -39,3 +44,7 @@ set -o noclobber
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# устанавливаем кэширование пароля от git. после этого можно делать обновление месона 
+# и скачивание репозиториев без ввода пароля по https
+git config --global credential.helper 'cache --timeout=108000'
