@@ -31,6 +31,7 @@ NvimKeymap.open_pp = function()
     "Edit:                                                             ||     toggle fold             :                    za",
     " delete all word under cursor              :                daw   ||     delete fold             :                    zd",
     " delete paragraph                          :                dap   ||",
+    " delete from currenta position line's end  :                D     ||",
     " upper case current word                   :                gUaw  ||",
     " upper case current paragraph              :                gUap  ||",
     " upper case current row                    :                gUU   ||",

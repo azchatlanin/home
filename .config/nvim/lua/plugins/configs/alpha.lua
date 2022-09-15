@@ -31,7 +31,6 @@ dashboard.section.header.val = {
 
 dashboard.section.buttons.val = {
 	dashboard.button(".",      "  Open current",                ":ene <CR>:NvimTreeFindFileToggle<CR>"),
-	dashboard.button("r",      "  Recently used files",         ":Telescope oldfiles<CR>"),
 	dashboard.button("ff",     "  Find file",                   ":Telescope find_files<CR>"),
 	dashboard.button("t",      "  Find text",                   ":Telescope live_grep<CR>"),
 	dashboard.button("update", "ﮮ  Plugins Update",              ":PackerSync<CR>"),
@@ -94,8 +93,8 @@ local projects = {
   },
 }
 
-dashboard.section.header_projects = header_projects
 dashboard.section.projects = projects
+dashboard.section.header_projects = header_projects
 dashboard.section.header_dirs = header_dirs
 dashboard.section.dirs = dirs
 

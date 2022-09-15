@@ -55,7 +55,7 @@ return packer.startup(function(use)
   use "pechorin/any-jump.vim"
 
   -- bufferline
-  use  "akinsho/bufferline.nvim"
+  use {'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons'}
 
   -- toggle terminal
   use "akinsho/toggleterm.nvim"

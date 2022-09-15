@@ -9,7 +9,7 @@ source /mnt/develop/bin/style
 #PS1="[$ITALIC$COLOR_BUILD_0\w$RESET]\n$BOLD$GREEN$COLOR_BUILD_2[]$YELLOW ->$RESET "
 #PS1="$BOLD$GREEN$COLOR_BUILD_2[]$YELLOW ->$RESET "
 
-PS1="\n[$ITALIC$COLOR_BUILD_0\w$RESET]\n$BOLD$COLOR_BUILD_2[]$RESET$YELLOW ->$RESET "
+PS1="\n$ITALIC$COLOR_BUILD_0\w$RESET\n$BOLD$COLOR_BUILD_2[]$RESET$YELLOW ->$RESET "
 
 if [ -f ~/.bash_aliases ]; then
   . ~/.bash_aliases
@@ -22,18 +22,17 @@ fi
 # set history size in the file
 HISTFILESIZE=12000
 
-# chatlanin
-export CHATLANIN_PATH=/mnt/develop/bin
-export PROJECT_CPP_PATH=/mnt/develop/projects/cpp
-export PATH=$PATH:$CHATLANIN_PATH:$PROJECT_CPP_PATH
-
-# vamp export VAMPY_PATH=$HOME/vamp
-export PATH=$PATH:$VAMPY_PATH
 # text to speech
 export GOOGLE_APPLICATION_CREDENTIALS=/mnt/develop/application/Golang/TextToSpeach/TextToSpeech-862311f87938.json
 
-# path setup
-export PATH=$PATH:/usr/include:/usr/include
+# chatlanin
+export CHATLANIN_PATH=/mnt/develop/bin
+export PROJECT_CPP_PATH=/mnt/develop/projects/cpp
+
+export PATH=$PATH:$CHATLANIN_PATH:$PROJECT_CPP_PATH:/usr/include
+# нужно добавить переменнуб окружения $VAMPY_PATH для работы анотатора
+# export PATH=$PATH:$CHATLANIN_PATH:$PROJECT_CPP_PATH:/usr/include:$VAMPY_PATH
+
 
 clear && screenfetch && lst
 

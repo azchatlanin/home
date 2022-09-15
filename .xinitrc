@@ -42,6 +42,8 @@ picom &
 google-chrome-stable &
 telegram-desktop &
 dbeaver &
+anki &
+discord &
 tilix --class=terminal_worker --new-process &
 tilix --class=terminal_worker --new-process &
 tilix --class=terminal_worker --new-process &
